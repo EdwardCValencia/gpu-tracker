@@ -1,0 +1,45 @@
+<div style={{ display:'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px'}}>
+                        {filteredData.map(gpu => {
+                            const verdict = getVerdict(gpu.price, gpu.msrp);
+
+                            return (
+                                <div key={gpu.id} style={{background: 'white', padding: '20px', borderRadius: '8px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)'}}>
+                                    <h4 style={{margin: '0 0 10px 0' }}>{gpu.name}</h4>
+                                    <p style={{ color: '#666', fontSize: '0.9rem' }}>{gpu.tier} | {gpu.brand}</p>
+
+                                    <div style={{ margin: '15px 0', padding: '10px', background: '#f9f9f9', borderRadius: '5px'}}>
+                                        <div style={{ display: 'flex', justifyContent:'space-between'}}>
+                                            <span>MSRP:</span>
+                                            <strong>${gpu.msrp}</strong>
+                                        </div>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between', color: verdict.color}}>
+                                            <span>Current:</span>
+                                            <strong>${gpu.price || '---'}</strong>
+                                        </div>
+                                    </div>
+
+                                    <div style={{
+                                        textAlign: 'center',
+                                        padding: '8px',
+                                        background: 'verdict.color',
+                                        color: 'white',
+                                        borderRadius: '4px',
+                                        fontWeight: 'bold',
+                                        marginBottom: '10px'
+                                    }}>
+                                        {verdict.text}
+                                    </div>
+
+                                    <a
+                                        href={gpu.url}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        style={{ display: 'block', textAlign: 'center', textDecoration: 'none', color: '#007bff' }}
+                                    >
+                                        Buy at {gpu.bestStore} &rarr;
+                                    </a>
+                                </div>
+                            );
+                        })}
+
+                    </div>
