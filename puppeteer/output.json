@@ -1,0 +1,171 @@
+{
+  "gpu_database": [
+    {
+      "manufacturer": "Nvidia",
+      "series": [
+        {
+          "series_name": "50 Series",
+          "architecture": "Blackwell",
+          "tiers": [
+            {
+              "tier_name": "RTX 5090",
+              "reference_price": 1999.99,
+              "models": [
+                {
+                  "brand": "ASUS",
+                  "name": "ROG Astral OC 5090",
+                  "msrp": 2799.99,
+                  "current_price": 3359.99,
+                  "urls": {
+                    "amazon": "https://www.amazon.com/dp/B0DS2WQZ2M",
+                    "bestbuy": "https://www.bestbuy.com/product/asus-rog-astral-nvidia-geforce-rtx-5090-32gb-gddr7-pci-express-5-0-graphics-card-black/JJGGLHJVSV",
+                    "newegg": "https://www.newegg.com/asus-rog-astral-rog-astral-rtx5090-o32g-gaming-geforce-rtx-5090-32gb-graphics-card-triple-fans/p/N82E16814126751?item=N82E16814126751"
+                  },
+                  "scraped_prices": {
+                    "newegg": 3359.99,
+                    "amazon": 3199,
+                    "bestbuy": 3359.99
+                  }
+                },
+                {
+                  "brand": "MSI",
+                  "name": "Gaming Trio OC 5090",
+                  "msrp": 2349.99,
+                  "current_price": 2499.99,
+                  "urls": {
+                    "amazon": "https://www.amazon.com/dp/B0DT6Q3BXM",
+                    "bestbuy": "https://www.bestbuy.com/product/msi-nvidia-geforce-geforce-rtx-5090-32g-gaming-trio-oc-32gb-gddr7-pci-express-gen-5-graphics-card-black/J3P7TX6Z3H",
+                    "newegg": "https://www.newegg.com/msi-rtx-5090-32g-gaming-trio-oc-geforce-rtx-5090-32gb-graphics-card/p/N82E16814137919?item=N82E16814137919"
+                  },
+                  "scraped_prices": {
+                    "newegg": 2559.99,
+                    "bestbuy": 2499.99,
+                    "amazon": 2979
+                  }
+                },
+                {
+                  "brand": "Gigabyte",
+                  "name": "AORUS MASTER 5090",
+                  "msrp": 2499.99,
+                  "current_price": 2599.99,
+                  "urls": {
+                    "amazon": "https://www.amazon.com/dp/B0DT9YQR11",
+                    "bestbuy": "https://www.bestbuy.com/product/gigabyte-nvidia-geforce-rtx-5090-aorus-master-32g-gddr7-pci-express-5-0-graphics-card-black/J3ZW9X7C67",
+                    "newegg": "https://www.newegg.com/gigabyte-gv-n5090aorus-m-32gd-geforce-rtx-5090-32gb-graphics-card-triple-fans/p/N82E16814932760?item=N82E16814932760"
+                  },
+                  "scraped_prices": {
+                    "newegg": 1319.99,
+                    "amazon": 2979
+                  }
+                },
+                {
+                  "brand": "MSI",
+                  "name": "Suprim Liquid SOC 5090",
+                  "msrp": 2499.99,
+                  "current_price": 3229,
+                  "urls": {
+                    "amazon": "https://www.amazon.com/dp/B0BSN426TP",
+                    "bestbuy": "https://www.bestbuy.com/product/msi-nvidia-geforce-geforce-rtx-5090-32g-suprim-liquid-soc-32gb-gddr7-pci-express-gen-5-graphics-card-black/J3P7TX6S72",
+                    "newegg": "https://www.newegg.com/msi-rtx-5090-32g-suprim-liquid-soc-geforce-rtx-5090-32gb-graphics-card-liquid-cooler/p/N82E16814137916?item=N82E16814137916"
+                  },
+                  "scraped_prices": {
+                    "bestbuy": 3229.99,
+                    "newegg": 3057.99,
+                    "amazon": 3057.99
+                  }
+                }
+              ]
+            },
+            {
+              "tier_name": "RTX 5080",
+              "reference_price": 999.99,
+              "models": []
+            },
+            {
+              "tier_name": "RTX 5070 Ti",
+              "reference_price": 749.99,
+              "models": []
+            },
+            {
+              "tier_name": "RTX 5070",
+              "reference_price": 549.99,
+              "models": []
+            },
+            {
+              "tier_name": "RTX 5060 Ti (16 GB)",
+              "reference_price": 429.99,
+              "models": []
+            },
+            {
+              "tier_name": "RTX 5060 Ti (8 GB)",
+              "reference_price": 379.99,
+              "models": []
+            },
+            {
+              "tier_name": "RTX 5060",
+              "reference_price": 299.99,
+              "models": []
+            },
+            {
+              "tier_name": "RTX 5050",
+              "reference_price": 249.99,
+              "models": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "AMD",
+      "series": [
+        {
+          "series_name": "RX 9000 Series",
+          "architecture": "RDNA 4",
+          "tiers": [
+            {
+              "tier_name": "RX 9070 XT",
+              "reference_price": 599.99,
+              "models": []
+            },
+            {
+              "tier_name": "RX 9070",
+              "reference_price": 549.99,
+              "models": []
+            },
+            {
+              "tier_name": "RX 9060 XT (16 GB)",
+              "reference_price": 349.99,
+              "models": []
+            },
+            {
+              "tier_name": "RX 9060 XT (8 GB)",
+              "reference_price": 299.99,
+              "models": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Intel",
+      "series": [
+        {
+          "series_name": "ARC Battlemage",
+          "architecture": "Xe2",
+          "tiers": [
+            {
+              "tier_name": "B580",
+              "reference_price": 249.99,
+              "models": []
+            },
+            {
+              "tier_name": "B570",
+              "reference_price": 219.99,
+              "models": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

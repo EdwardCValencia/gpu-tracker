@@ -1,0 +1,338 @@
+{
+  "gpu_database": [
+    {
+      "manufacturer": "Nvidia",
+      "series": [
+        {
+          "series_name": "50 Series",
+          "architecture": "Blackwell",
+          "tiers": [
+            {
+              "tier_name": "RTX 5090",
+              "reference_price": 1999.99,
+              "models": [
+                {
+                  "brand": "ASUS",
+                  "name": "ROG Astral OC 5090",
+                  "image": "https://cdna.pcpartpicker.com/static/forever/images/product/0161407080353d18971dcccd15dc3722.1600.jpg",
+                  "msrp": 2799.99,
+                  "current_price": 3359.99,
+                  "urls": {
+                    "amazon": "https://www.amazon.com/dp/B0DS2WQZ2M",
+                    "bestbuy": "https://www.bestbuy.com/product/asus-rog-astral-nvidia-geforce-rtx-5090-32gb-gddr7-pci-express-5-0-graphics-card-black/JJGGLHJVSV"
+                  }
+                },
+                {
+                  "brand": "MSI",
+                  "name": "Gaming Trio OC 5090",
+                  "image": "https://cdna.pcpartpicker.com/static/forever/images/product/95f27af65a763da39cf414b23ee93a8f.1600.jpg",
+                  "msrp": 2349.99,
+                  "current_price": 2499.99,
+                  "urls": {
+                    "amazon": "https://www.amazon.com/dp/B0DT6Q3BXM",
+                    "bestbuy": "https://www.bestbuy.com/product/msi-nvidia-geforce-geforce-rtx-5090-32g-gaming-trio-oc-32gb-gddr7-pci-express-gen-5-graphics-card-black/J3P7TX6Z3H"
+                  }
+                },
+                {
+                    "brand":"Gigabyte",
+                    "name": "AORUS MASTER 5090",
+                    "image": "https://cdna.pcpartpicker.com/static/forever/images/product/96ecd11ddbe5a193c95422e8e620fca6.1600.jpg",
+                    "msrp": 2499.99,
+                    "current_price": 2599.99,
+                    "urls": {
+                        "amazon": "https://www.amazon.com/dp/B0DT9YQR11",
+                        "bestbuy": "https://www.bestbuy.com/product/gigabyte-nvidia-geforce-rtx-5090-aorus-master-32g-gddr7-pci-express-5-0-graphics-card-black/J3ZW9X7C67"
+                    }
+                },
+                {
+                  "brand":"MSI",
+                  "name": "Suprim Liquid SOC 5090",
+                  "image": "https://cdna.pcpartpicker.com/static/forever/images/product/ceb6bf84996a0c5d069a73e5b48c4d75.1600.jpg",
+                  "msrp": 2499.99,
+                  "current_price": 3229.00,
+                  "urls": {
+                        "amazon": "https://www.amazon.com/dp/B0BSN426TP",
+                        "bestbuy": "https://www.bestbuy.com/product/msi-nvidia-geforce-geforce-rtx-5090-32g-suprim-liquid-soc-32gb-gddr7-pci-express-gen-5-graphics-card-black/J3P7TX6S72"
+                  }
+                },
+                {
+                  "brand": "ASUS",
+                  "name": "TUF Gaming OC 5090",
+                  "image": "https://cdna.pcpartpicker.com/static/forever/images/product/d85af27e38505651d2ad048fb72ee1fa.1600.jpg",
+                  "msrp": 2499.99,
+                  "current_price": 2899.99,
+                  "urls": {
+                    "amazon":"https://www.amazon.com/dp/B0DS2X13PH",
+                    "bestbuy": "https://www.bestbuy.com/product/asus-tuf-gaming-nvidia-geforce-rtx-5090-32gb-gddr7-pci-express-5-0-graphics-card-black/JJGGLHJV6S"
+                  }
+                }
+              ]
+            },
+            {
+              "tier_name": "RTX 5080",
+              "reference_price": 999.99,
+              "models": [
+                {
+                  "brand": "ASUS",
+                  "name": "PRIME OC 5080",
+                  "image": "https://cdna.pcpartpicker.com/static/forever/images/product/d3b30a207c7d1f6425a742e9169a8ee0.1600.jpg",
+                  "msrp": 1199.99,
+                  "current_price": 1299.99,
+                  "urls": {
+                    "amazon": "https://www.amazon.com/dp/B0DTPG3B1N",
+                    "bestbuy": "https://www.bestbuy.com/product/asus-prime-nvidia-geforce-rtx-5080-16gb-gddr7-pci-express-5-0-graphics-card-black/JJGGLH7RSP",
+                    "newegg": ""
+                  }
+                },
+                {
+                  "brand":"PNY",
+                  "name":"OC 5080",
+                  "image":"https://cdna.pcpartpicker.com/static/forever/images/product/0f3e8c7fec641072601f855e0e3f8cf2.1600.jpg",
+                  "msrp": 999.99,
+                  "current_price": 999.99,
+                  "urls":{
+                    "amazon":"https://www.amazon.com/dp/B0DTJFZ4YS",
+                    "bestbuy":"https://www.bestbuy.com/product/pny-geforce-rtx-5080-16gb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black/JXF2C46ZZH",
+                    "newegg":"https://www.newegg.com/pny-technologies-inc-oc-vcg508016tfxpb1-o-geforce-rtx-5080-16gb-graphics-card-triple-fans/p/N82E16814133899?item=N82E16814133899"
+                  }
+                },
+                {
+                  "brand":"Gigabyte",
+                  "name":"WINDFORCE OC (SFF)",
+                  "image":"https://cdna.pcpartpicker.com/static/forever/images/product/b593bb95ec0b9a1c2e4bf889f2a8dd32.1600.jpg",
+                  "msrp":999.99,
+                  "current_price":1299.99,
+                  "urls":{
+                    "amazon":"https://www.amazon.com/dp/B0DS2R7N4F",
+                    "bestbuy":"https://www.bestbuy.com/product/gigabyte-nvidia-geforce-rtx-5080-windforce-oc-sff-16g-gddr7-pci-express-5-0-graphics-card-black/J3ZW9X7CH2",
+                    "newegg":"https://www.newegg.com/gigabyte-windforce-gv-n5080wf3oc-16gd-geforce-rtx-5080-16gb-graphics-card-triple-fans/p/N82E16814932754?item=N82E16814932754"
+                  }
+                }
+              ]
+            },
+            {
+              "tier_name": "RTX 5070 Ti",
+              "reference_price": 749.99,
+              "models":[
+                {
+                  "brand":"ASUS",
+                  "name":"PRIME OC 5070 Ti",
+                  "image":"https://cdna.pcpartpicker.com/static/forever/images/product/43191ac360269737064e20b57d60c9b6.1600.jpg",
+                  "msrp":899.99,
+                  "current_price":749.99,
+                  "urls":{
+                    "amazon":"https://www.amazon.com/dp/B0DS6WFRBP",
+                    "bestbuy":"https://www.bestbuy.com/product/asus-prime-nvidia-geforce-rtx-5070-ti-16gb-gddr7-pci-express-5-0-graphics-card-black/JJGGLHJX5W",
+                    "newegg":"https://www.newegg.com/asus-prime-rtx5070ti-16g-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans/p/N82E16814126757?item=N82E16814126757"
+                  }
+                }
+              ]
+            },
+            {
+              "tier_name": "RTX 5070",
+              "reference_price": 549.99,
+              "models":[
+
+              ]
+            },
+            {
+              "tier_name": "RTX 5060 Ti (16 GB)",
+              "reference_price": 429.99,
+              "models":[
+
+              ]
+            },
+            {
+              "tier_name": "RTX 5060 Ti (8 GB)",
+              "reference_price": 379.99,
+              "models":[
+
+              ]
+            },
+            {
+              "tier_name": "RTX 5060",
+              "reference_price": 299.99,
+              "models":[
+
+              ]
+            },
+            {
+              "tier_name": "RTX 5050",
+              "reference_price": 249.99,
+              "models":[
+
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "AMD",
+      "series": [
+        {
+          "series_name": "RX 9000 Series",
+          "architecture": "RDNA 4",
+          "tiers": [
+            {
+              "tier_name": "RX 9070 XT",
+              "reference_price": 599.99,
+              "models": [
+                {
+                  "brand":"Sapphire",
+                  "name":"PULSE Radeon RX 9070 XT",
+                  "image":"https://cdna.pcpartpicker.com/static/forever/images/product/476e6143a031380658f2fdb9d5a2126d.1600.jpg",
+                  "msrp":599.99,
+                  "current_price":649.99,
+                  "urls":{
+                    "amazon":"https://www.amazon.com/dp/B0DTHMPWFR",
+                    "bestbuy":"",
+                    "newegg":"https://www.newegg.com/sapphire-tech-pulse-11348-03-20g-radeon-rx-9070-xt-16gb-graphics-card-triple-fans/p/N82E16814202450?item=N82E16814202450"
+                  }
+                }
+              ]
+            },
+            {
+              "tier_name": "RX 9070",
+              "reference_price": 549.99,
+              "models":[
+                {
+                  "brand":"PowerColor",
+                  "name":"Reaper Radeon RX 9070",
+                  "image":"https://cdna.pcpartpicker.com/static/forever/images/product/ee430c2bbe34ba14fdf0378514f2bfdc.1600.jpg",
+                  "msrp":549.99,
+                  "current_price":649.99,
+                  "urls":{
+                    "amazon":"https://www.amazon.com/dp/B0DSWL46CF",
+                    "bestbuy":"",
+                    "newegg":"https://www.newegg.com/powercolor-reaper-rx9070-16g-a-radeon-rx-9070-16gb-graphics-card-triple-fans/p/N82E16814131874?item=N82E16814131874"
+                  }
+                }
+              ]
+            },
+            {
+              "tier_name": "RX 9060 XT (16 GB)",
+              "reference_price": 349.99,
+              "models":[
+                {
+                  "brand":"XFX",
+                  "name":"Swift OC Radeon RX 9060 XT",
+                  "image":"https://cdna.pcpartpicker.com/static/forever/images/product/b7e8bd378dc83ed462dd986eb508ace7.1600.jpg",
+                  "msrp":349.99,
+                  "current_price":399.99,
+                  "urls":{
+                    "amazon":"https://www.amazon.com/dp/B0FC5ZQKJ8",
+                    "bestbuy":"",
+                    "newegg":"https://www.newegg.com/xfx-swift-rx-96tsw16bq-radeon-rx-9060-xt-16gb-graphics-card-double-fans/p/N82E16814150914?item=N82E16814150914"
+                  }
+                }
+              ]
+            },
+            {
+              "tier_name": "RX 9060 XT (8 GB)",
+              "reference_price": 299.99,
+              "models":[
+
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Intel",
+      "series":[
+        {
+          "series_name": "ARC Battlemage",
+          "architecture": "Xe2",
+          "tiers":[
+            {
+              "tier_name": "B580",
+              "reference_price": 249.99,
+              "models":[
+                {
+                  "brand": "Intel",
+                  "name": "Limited Edition Arc B580",
+                  "image": "https://cdna.pcpartpicker.com/static/forever/images/product/4d6582f8f760f3da54b0dc4f85a816d4.1600.jpg",
+                  "msrp": 249.99,
+                  "current_price": 249.99,
+                  "urls": {
+                    "amazon": "https://www.amazon.com/dp/B0DPM9923G",
+                    "bestbuy": "https://www.bestbuy.com/product/intel-arc-b580-limited-edition-graphics-card-multi/JXZRJ552Z4",
+                    "newegg": "https://www.newegg.com/intel-arc-b580-limited-edition-graphics-card-12gb-air-cooler/p/N82E16814883006?item=N82E16814883006"
+                  }
+                },
+                {
+                  "brand": "ASRock",
+                  "name": "Steel Legend OC Arc B580",
+                  "image":"https://cdna.pcpartpicker.com/static/forever/images/product/392d6829f5c0adde7789361a93da1348.1600.jpg",
+                  "msrp": 269.99,
+                  "current_price": 259.99,
+                  "urls":{
+                    "amazon":"",
+                    "bestbuy":"",
+                    "newegg":"https://www.newegg.com/asrock-steel-legend-b580-sl-12go-arc-b580-12gb-graphics-card-triple-fans/p/N82E16814930132?item=N82E16814930132"
+                  }
+                },
+                {
+                  "brand":"Acer",
+                  "name":"Nitro OC Arc B580",
+                  "image":"https://cdna.pcpartpicker.com/static/forever/images/product/d72d8ec3a712557e96614f1a6c5d0de9.1600.jpg",
+                  "msrp":279.99,
+                  "current_price":239.99,
+                  "urls":{
+                    "amazon":"https://www.amazon.com/dp/B0DQTKGQ7X",
+                    "bestbuy":"",
+                    "newegg":""
+                  }
+                },
+                {
+                  "brand":"Sparkle",
+                  "name":"TITAN OC Arc B580",
+                  "image":"https://cdna.pcpartpicker.com/static/forever/images/product/7ce4d8ac0fe7a6ff0bb47f264dcceae3.1600.jpg",
+                  "msrp":269.99,
+                  "current_price":299.99,
+                  "urls":{
+                    "amazon":"https://www.amazon.com/dp/B0DNMH4KQM",
+                    "bestbuy":"",
+                    "newegg":"https://www.newegg.com/sparkle-computer-co-ltd-intel-arc-b580-titan-oc-12gb-graphics-card-air-cooler/p/N82E16814993013?item=N82E16814993013"
+                  }
+                }
+              ]
+            },
+            {
+              "tier_name": "B570",
+              "reference_price": 219.99,
+              "models":[
+                {
+                  "brand":"ASRock",
+                  "name":"Challenger OC Arc B570",
+                  "image":"https://cdna.pcpartpicker.com/static/forever/images/product/8bb6435d826d9299772411dfe3cec371.1600.jpg",
+                  "msrp":219.99,
+                  "current_price":209.99,
+                  "urls":{
+                    "amazon":"https://www.amazon.com/dp/B0DQYM2MHX",
+                    "bestbuy":"https://www.bestbuy.com/product/asrock-intel-arc-b570-challenger-10gb-gddr6-oc-pcie-4-0-graphic-card-black/C34FQFQYJF",
+                    "newegg":"https://www.newegg.com/asrock-challenger-b570-cl-10go-arc-b570-10gb-graphics-card-double-fans/p/N82E16814930134?item=N82E16814930134"
+                  }
+                },
+                {
+                  "brand":"Sparkle",
+                  "name":"Guardian OC Arc B570",
+                  "image":"https://cdna.pcpartpicker.com/static/forever/images/product/e59dadc40b1f383f044a1ad3e643060b.1600.jpg",
+                  "msrp":229.99,
+                  "current_price":199.99,
+                  "urls":{
+                    "amazon":"https://www.amazon.com/dp/B0DR337DJG",
+                    "bestbuy":"",
+                    "newegg":""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

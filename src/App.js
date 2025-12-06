@@ -1,24 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Welcome from './(Pages)/Welcome'
+import Results from './(Pages)/Results'
+import { flattenData } from "./utils";
+import ProductDetails from "./(Pages)/Details";
 
-function App() {
+function App(){
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch('output.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Could not find Data File");
+        }
+        return response.json()
+      })
+      .then(jsonData => {
+        const flat = flattenData(jsonData);
+        setData(flat);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Error loading data:', err);
+        setError('Failed to load GPU data. Please try agian later.');
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <div style={{ textAlign: 'center', marginTop: '50px' }}> Loading Latest Pricing Data. One Moment...</div>
+  }
+  if (error) {
+    return <div style={{ textAlign: 'center', marginTop: '50px', color: 'red' }}> {error}</div>
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App" style={{ fontFamily: 'Arial, sans-serif'}}>
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/results" element={<Results allData={data} />} />
+          <Route path="/product/:id" element={<ProductDetails allData={data} />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
