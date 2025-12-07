@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import { useSearchParams } from "react-router-dom";
 import { getVerdict } from "../utils";
 import { useNavigate } from "react-router-dom";
+import Logo from "../Components/Logo";
 
 export default function Results({ allData }){
     const navigate = useNavigate()
@@ -27,7 +28,7 @@ export default function Results({ allData }){
 
         const results = allData.filter(item => {
             const matchesSearch = item.name.toLowerCase().includes(lowerTerm) || item.tier.toLowerCase().includes(lowerTerm);
-            const matchesManufacturer = selectedManufacturer === 'All' || item.brand === selectedManufacturer;
+            const matchesManufacturer = selectedManufacturer === 'All' || item.manufacturer === selectedManufacturer;
             const matchesPrice = (item.price || 0) <= maxPrice;
             const matchesBrand = selectedBrands.length === 0 || selectedBrands.includes(item.brand);
             const matchesTiers = selectedTiers.length === 0 || selectedTiers.includes(item.tier);
@@ -36,7 +37,7 @@ export default function Results({ allData }){
         });
 
         setFilteredData(results);
-    }, [searchTerm, selectedManufacturer, maxPrice,, selectedBrands,selectedTiers, allData]);
+    }, [searchTerm, selectedManufacturer, maxPrice, selectedBrands,selectedTiers, allData]);
 
     const handleSearchChange = (e) => {
         setSearchTerm(e.target.value);
@@ -58,16 +59,21 @@ export default function Results({ allData }){
     return (
         <div style={{ padding: '20px', maxWidth: '1400px', margin: '0 auto' }}>
 
+            <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginBottom: '20px'}}>
 
+                <div style={{ flex: '0 0 250px',display: 'flex', justifyContent: "center", paddingLeft: '10px'}}>
+                    <Logo />
+                </div>
 
-            <div style={{ marginBottom: '20px', display: "flex", justifyContent: 'center',}}>
-                <input
-                    type="text"
-                    value={searchTerm}
-                    onChange={handleSearchChange}
-                    style={{ padding: '10px', width: '50%', fontSize: '16px' }}
-                    placeholder="Enter Search Terms..."
-                />
+                <div style={{ flex: 1}}>
+                    <input
+                        type="text"
+                        value={searchTerm}
+                        onChange={handleSearchChange}
+                        style={{ padding: '10px', width: '50%', fontSize: '16px' }}
+                        placeholder="Enter Search Terms..."
+                    />
+                </div>
             </div>
 
             <div style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
@@ -101,14 +107,14 @@ export default function Results({ allData }){
 
                     <div style={{ marginBottom: '20px'}}>
                         <label style={{ display: "block", marginBottom: '8px', fontWeight: 'bold', }}>Brand</label>
-                        <div style={{ maxHeight: '200px', overflowY: 'auto', border: '1px solid #eee', padding: '10px', borderRadius: '6px'}}>
+                        <div style={{ maxHeight: '200px', overflowY: 'auto', border: '1px solid #ddd', padding: '10px', borderRadius: '6px'}}>
                             {brands.map(brand => (
                                 <div key={brand} style={{ marginBottom: '5px'}}>
                                     <label style={{ cursor: 'pointer', display: 'flex', alignItems: 'center'}}>
                                         <input 
                                             type="checkbox"
                                             checked={selectedBrands.includes(brand)}
-                                            onChange={() => checkFilter(brand, setSelectedBrands,setSelectedBrands)}
+                                            onChange={() => checkFilter(brand, selectedBrands,setSelectedBrands)}
                                             style={{ marginRight: '8px'}}
                                         />
                                         {brand}
@@ -120,14 +126,14 @@ export default function Results({ allData }){
 
                     <div style={{ marginBottom: '20px'}}>
                         <label style={{ display: "block", marginBottom: '8px', fontWeight: 'bold', }}>Tier</label>
-                        <div style={{ maxHeight: '200px', overflowY: 'auto', border: '1px solid #eee', padding: '10px', borderRadius: '6px'}}>
+                        <div style={{ maxHeight: '200px', overflowY: 'auto', border: '1px solid #ddd', padding: '10px', borderRadius: '6px'}}>
                             {tiers.map(tier => (
-                                <div key={tiers} style={{ marginBottom: '5px'}}>
+                                <div key={tier} style={{ marginBottom: '5px'}}>
                                     <label style={{ cursor: 'pointer', display: 'flex', alignItems: 'center'}}>
                                         <input 
                                             type="checkbox"
                                             checked={selectedTiers.includes(tier)}
-                                            onChange={() => checkFilter(tier, setSelectedTiers,setSelectedTiers)}
+                                            onChange={() => checkFilter(tier, selectedTiers,setSelectedTiers)}
                                             style={{ marginRight: '8px'}}
                                         />
                                         {tier}

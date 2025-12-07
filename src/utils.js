@@ -77,7 +77,8 @@ export const flattenData = (data) => {
                     flattened.push({
                         id: (model.name + tier.tier_name).replace(/\s+/g, '-'),
                         name: model.name,
-                        brand: model.brand || maker.manufacturer,
+                        brand: model.brand,
+                        manufacturer: maker.manufacturer,
                         series: series.series_name,
                         tier: tier.tier_name,
                         msrp: model.msrp || tier.reference_price,

@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import Logo from "../Components/Logo";
 
 export default function Welcome(){
     const [term, setTerm] = useState('');
@@ -12,8 +13,12 @@ export default function Welcome(){
 
     return (
         <div style={styles.container}>
-            <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}> GPU Price Tracker</h1>
-            <p style={{ marginBottom: '40px' }}>Find the best time to upgrade your GPU</p>
+            <div style={styles.logoWrapper}>
+                <div style={{ transform: 'scale(3)', transformOrigin: 'center'}}>
+                    <Logo />
+                </div>
+            </div>
+            <p style={styles.subtitle}>Check prices. Compare models. Buy smart.</p>
 
             <form onSubmit={handleSearch} style={styles.form}>
                 <input 
@@ -36,12 +41,30 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'center',
         height: '100vh',
-        backgroundColor: '#f0f2f5',
+        padding: '20px',
+        fontFamily: "'Inter', sans-serif"
+    },
+    logoWrapper: {
+        marginBottom: '60px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '20px'
+    },
+    subtitle: {
+        marginBottom: '40px',
+        fontSize: '1.2.rem',
+        color: '#555',
+        textAlign: 'center',
+        maxWidth: '600px',
+        lineHeight: '1.5'
     },
     form: {
         display: 'flex',
         gap: '10px',
-        width: '500px'
+        width: '100%',
+        maxWidth: '600px',
+        filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.1)'
     },
     input: {
         flex: 1,

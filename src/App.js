@@ -39,7 +39,7 @@ function App(){
 
   return (
     <Router>
-      <div className="App" style={{ fontFamily: 'Arial, sans-serif'}}>
+      <div className="App" style={styles.appContainer}>
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/results" element={<Results allData={data} />} />
@@ -48,6 +48,16 @@ function App(){
       </div>
     </Router>
   );
+}
+
+const styles = {
+  appContainer: {
+    fontFamily: "'Inter', 'Arial', sans-serif",
+    minHeight: '100vh',
+    background: 'linear-gradient(135deg, #f5f7fa 0%,#c3cfe2 100%',
+    backgroundAttachment: 'fixed',
+    backgroundSize: 'cover'
+  }
 }
 
 export default App;
